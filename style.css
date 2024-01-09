@@ -86,21 +86,40 @@ ul li a {
     padding: 10px;
     box-sizing: border-box;
 }
-/*propertiea*/
+/*propertiey*/
 .content_property{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: left;
-    display: flex;
+    display:flex;
+    justify-content:space-evenly; 
+    top: 400px; 
 }
+.home_p{
+    background-color:rgb(212, 212, 220);
+    width: 300px;
+    height: 400px;
+ 
+  }
 h1{
     text-align: center; /* Center align all text */ 
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  
 }
- .home {
+.home {
     width: 250px;
     height:200px;
+    margin: 5px 0;
+    
 
   }
+
+  .properties_h2 {
+    margin: 5px 0;
+    font-size: 1.2em; /* Adjust the font size */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  
+  }
+
+  .properties_p {
+    margin: 5px 0;
+    font-size: 0.9em; /* Adjust the font size */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  
+  }
+
 
