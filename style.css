@@ -86,3 +86,21 @@ ul li a {
     padding: 10px;
     box-sizing: border-box;
 }
+/*propertiea*/
+.content_property{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+}
+h1{
+    text-align: center; /* Center align all text */ 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  
+}
+ .home {
+    width: 250px;
+    height:200px;
+
+  }
+
