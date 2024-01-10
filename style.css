@@ -189,7 +189,7 @@ Navbar
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    
     left: 0px;
     margin: 20px 2px 20px -50px ;
   }
