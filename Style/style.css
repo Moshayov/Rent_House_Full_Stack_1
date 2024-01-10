@@ -289,6 +289,11 @@ propeties
     display:flex;
     justify-content:space-evenly; 
     top: 400px; 
+    gap:1rem;
+    flex-wrap: wrap;
+    flex: 11 calc(33.333%-1rem);
+    overflow: hidden;
+
 }
 .home_p{
     /*background-color:rgb(212, 212, 220);*/
