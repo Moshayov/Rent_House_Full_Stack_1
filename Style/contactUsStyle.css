@@ -131,8 +131,7 @@ Navbar
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: center; 
-    background-color: #357a37; /* Green color */  
+    justify-content: center;  
     
   }
   .nav-center {
@@ -180,7 +179,7 @@ Navbar
     transition: background-color 0.5s ease, transform 0.3s ease-in-out;
   }
   .nav-link:hover {
-    background-color: #c2d3de; /* Darker blue color on hover */
+    background-color: #087511; /* Darker blue color on hover */
     transform: scale(1.05); /* Slightly scale the button on hover */
     border-radius: 20px;
   }
