@@ -369,4 +369,14 @@ h5 {
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
 }
-
+  /*
+=============== 
+Propeties diffrent
+===============
+*/
+.page .House-container .House-list img:hover{
+  transform: scale(1.1);
+}
+.page .House-container .House-list img{
+  border-radius: 10px;
+}
