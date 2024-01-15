@@ -250,37 +250,61 @@ Navbar
   margin-top: 5px; /* Adjust the margin-top as needed */
 }
 
- .open-menu {
+ .open-menu { 
   display: none; /* Initially hide the checkbox */
   cursor: pointer;
+  float: right;
+  margin: 10px;
+  z-index: 100;
 }
 
-@media screen and (max-width:680px) {
-  .menu{
-width: 100%;
-max-height: 0;
-overflow: hidden;
 
-    transition: all 0.2s ease-in-out;
-    
-  }
-  .open-menu{
-    display:inline-flex;
-    float: right;
-    margin-top: -50px;
-    margin-right: 10px;
-  }
-   
-   #check:checked ~ .menu
-   {
-    max-height: 100%;
-   }
-.nav-links{
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-}
 input[type="checkbox"]{
   display: none;
 } 
+
+
+
+@media screen and (max-width: 750px) {
+  .menu{
+    display: none;
+  }
+  .nav-links{
+    position: fixed;
+    top: 60px;
+    right: 0;
+    height: 100vh;
+    width: 259px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.931);
+    backdrop-filter: blur(10%);
+    box-shadow: -10px 0 10px rgba(0, 0,0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+  }
+  .nav-links li{
+    width: 100%;
+  }
+
+  .open-menu{
+    display:block;
+  }
+
+  .open-menu::before{
+    content: '≡';
+    margin-right: 10px;
+    font-size: 44px;
+    font-weight: bolder;
+  }
+  .navbar input[type="checkbox"]:checked + .menu  {
+    display: block;
+  }
+  .navbar input[type="checkbox"]:checked + .open-menu::before{
+  content: '✕';
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: bolder;
+
+  }
+}
