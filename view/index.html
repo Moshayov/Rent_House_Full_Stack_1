@@ -8,33 +8,45 @@
     <title>Document</title>
 </head>
 <body>
-   <nav class="navbar">
-    <div class="nav-center">
-        <div class="nav-header">
-            <a href="/view/index.html" class="nav-logo">
-                <img class="logo" src="/images/logo_welcome_home_edited.png" alt="logo">
-            </a>
-            <button class="nav-btn btn">
-                <i class="fas fa-align-justify"></i>
-            </button>
+    <nav class="navbar">  
+        <div><a href="/view/index.html" class="nav-logo">
+            <img class="logo" src="/images/logo_welcome_home_edited.png" alt="logo">
+        </a></div>
+        <div class="menu">
+            <ul class="nav-links">
+                <li><a href="/view/index.html" class="nav-link"> Home </a></li>
+                <li><a href="/view/About_Us.html" class="nav-link"> About Us </a></li>
+                <li><a href="/view/Properties.html" class="nav-link"> Properties </a></li>
+                <li><a href="/view/Contact_Us.html" class="nav-link"> Contact Us </a></li>
+                
+            </ul>
         </div>
-        <div class="nav-links">
-            <a href="/view/index.html" class="nav-link"> Home </a>
-            <a href="/view/About_Us.html" class="nav-link"> About Us </a>
-            <a href="/view/Properties.html" class="nav-link"> Properties </a>
-            <a href="/view/Contact_Us.html" class="nav-link"> Contact Us </a>
-        </div>
-    </div>
-</nav>
+           <div class="nav-check">
+            <input type="checkbox" name="check_m" id="check">
+           <label class="open-menu" for="check"><i class="fa fa-bars" style="font-size:36px"></i></label>     
+        </div> 
+    </nav>
 
     <div id="content">
-        <div id="image-container">
-            <img src="/images/Home_Index.webp" id="home_image" alt="The main image of the web site image of house">
+        <div id="image-container">  
             <div id="image-text">
                 <h1>Find Your Perfect Rental Home</h1>
             </div>
-            <input type="text" id="search-box" placeholder="Search...">
-            <span class="icon-search"><i class="fa fa-search" style="font-size:24px"></i></span>
+            <img src="/images/Home_Index.webp" id="home_image" alt="The main image of the web site image of house">
+           <div class="box-ta">
+            <table class="serch-e">
+                <tr>
+                    <td>
+                        <input type="text" id="search-box" placeholder="Search...">
+                    </td>
+                    <td>
+                        <span class="icon-search"><i class="fa fa-search" style="font-size:24px"></i></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+            
+           
         </div>
     </div>
 

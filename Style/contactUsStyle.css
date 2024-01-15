@@ -126,111 +126,10 @@ Page
     min-height: calc(100vh - (6rem + 4rem));
   }
 
-  /*
-=============== 
-Navbar
-===============
-*/
-/*
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;   
-  }
-  .nav-center {
-    width: 90vw;
-    max-width: var(--max-width); 
-  }
-  .nav-header {
-    height: 6rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    left: 0px;
-    margin: 20px 2px 20px -50px ;
-  }
-  .nav-header img {
-    width: 200px;
-    
-  }
-  .nav-logo {
-    display: flex;
-    align-items: flex-end;
-  }
-  
-  .nav-btn {
-    padding: 0.15rem 0.75rem;
-    cursor: pointer;
-    color: #0d0c0c;
-    background-color:#fff;
-    border: none;
-  }*/
-  /* Show the dropdown menu when the checkbox is checked */
-  /*
-  .nav-btn i {
-    font-size: 1.5rem;
-  }
-  .nav-links { 
-    height: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  } 
-  .nav-link {
-    color: white;
-    font-size: 1.1em;
-    max-width: 120px;
-    font-weight: 500;
-    display: block;
-    text-align: center;
-    text-transform: capitalize;
-    letter-spacing: var(--letterSpacing);
-    padding: 1rem 0;
-    text-decoration: none; 
-    color: #404042; 
-    position: relative;
-    font-size:60px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  .nav-link a:hover { 
-    background-color: #f0f0f0;
-  }
+ 
 
-  @media screen and (min-width: 992px) {
-    .navbar {
-      height: 6rem;
-    }
-    .nav-center {
-      display: flex;
-      align-items: center;
-    }
-    .nav-header {
-      padding: 0;
-      margin-right: 2rem;
-      height: auto;
-    }
+
   
-    .nav-btn {
-      display: none;
-    }
-    .nav-links {
-      height: auto !important;
-      flex-direction: row;
-      align-items: center;
-      width: 100%;
-    }
-    .nav-link {
-      padding: 0;
-      border-top: none;
-      margin-right: 1rem;
-      font-size: 1rem;
-    }
-    .contact-link {
-      margin-right: 0;
-      margin-left:  auto;
-    }
-  }
 
   /*
 =============== 
@@ -387,20 +286,20 @@ contact Us
   
 }
 #imag-contact{
-  display: block;
+
   width: 100%;
-  height: 400px;
-  filter: blur(3px);
-  
+  height: 100%;
+  opacity: 0.6; /* Adjust the opacity to control the intensity of the cloud effect */
 }
+
+
 #contact_h1{
-    color: white; /* Adjust text color to be visible on the image */
+   margin-top:50px ;
+    color: rgb(12, 12, 9); /* Adjust text color to be visible on the image */
     text-align: center;
-    
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    font-size: 3em; /* Adjust font size */
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5em; /* Adjust font size */
    
   }
 #contact_h2{
@@ -432,7 +331,7 @@ contact Us
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
     -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 }
-.label-qe{
+.label-qe {
     display: flex;
     align-items: center;
     padding: 30px;
@@ -447,9 +346,6 @@ contact Us
   font-weight: 600;
 }
 
-input[type="checkbox"]{
-    display: none;
-}
 .Contact_Us_q .content_qu{
     color: #555;
     padding: 0 10px;
@@ -555,7 +451,7 @@ width: 100%;
 .inputBox input[type="submit"]{
     padding: 10px 20px;
     font-size: 1em;
-    background-color: #357a37; /* Green color */
+    background-color: #6e5d33;; /* Green color */
     color: white;
     font-size: 1.1em;
     max-width: 120px;
@@ -567,7 +463,7 @@ width: 100%;
     }
 
     .inputBox input[type="submit"]:hover {
-      background-color: #56ea7b; /* Darker blue color on hover */
+      background-color: #dcc110; /* Darker blue color on hover */
       transform: scale(1.05); /* Slightly scale the button on hover */
     }
 
@@ -592,7 +488,7 @@ width: 100%;
   min-width: 40px;
   height: 40px;
   color: #f4f4f9;
-  background-color: #357a37; /* Green color */
+  background-color: #493910;; /* Green color */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -619,14 +515,14 @@ width: 100%;
   
 }
 .sci li a{
-  color:  #81b789;
+  color:  #dcc110;
   font-size: 2em;
-  color: #357a37;
+  color: #493910;
   
 
 }
 .sci li a:hover{
-  color: #81b789;
+  color: #dcc110;
 }
 .map{
   padding: 0;
@@ -675,78 +571,97 @@ responsive Design
   }
 }
 
-  /*navber* i try another way*/
-nav{
+input[type="checkbox"]{
+  display: none;
+}
+
+ /*
+=============== 
+Navbar
+===============
+*/
+.navbar {
+ 
   background: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-}
-nav ul{
-  width: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-nav li{
-  height: 50px;
-}
-nav li a {
-  height: 100%;
-  padding: 0 30px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  color: #0c0c0d;
-}
-nav li a:hover{
-  background-color: #f0f0f0;
-}
-nav li:first-child{
-  margin-right: auto;
-}
-.dropdown_menu{
   position: fixed;
   top: 0;
-  right: 0;
-  height: 100vh;
-  width: 250px;
-  z-index: 999;
-  background-color: rgba(255, 255, 255, 0.2);;
-  backdrop-filter: blur(10px);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-
-}
-.dropdown_menu li{
   width: 100%;
+  height: 60px;
+  z-index: 1000; /* Adjust z-index as needed */
 }
 
-.dropdown_menu a{
-  width: 100%;
+.nav-links {
+  list-style-type: none;
+  margin:0; 
+  padding: 0;
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
 
-nav label  {
-  display: none ;
+.nav-link {
+  margin-top: -50px;
+  top: 0;
+  justify-content:center;
+  display: block;
+  color: #0d0101;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.nav-link:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.logo {
+  height: 50px; /* Adjust the height of your logo as needed */
+  margin-top: 5px; /* Adjust the margin-top as needed */
+}
+
+ .open-menu {
+  display: none; /* Initially hide the checkbox */
   cursor: pointer;
 }
 
-@media screen and (max-width:659px) {
-  .nav-links{
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-  }
+@media screen and (max-width:680px) {
+  .menu{
+width: 100%;
+max-height: 0;
+overflow: hidden;
 
- nav label {
+    transition: all 0.2s ease-in-out;
+    
+  }
+  .open-menu{
     display:inline-flex;
+    float: right;
+    margin-top: -50px;
+    margin-right: 10px;
   }
-
-  nav input[type="checkbox"]:checked~.nav-links
-   {
-    max-height: 100%; 
-   }
    
+   #check:checked ~ .menu
+   {
+    max-height: 100%;
+   }
+.nav-links{
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
+
+
+}
+
+/*
+<div id="image-container">  
+            <span class="icon-search"><i class="fa fa-search" style="font-size:24px"></i></span>
+            <img src="/images/Home_Index.webp" id="home_image" alt="The main image of the web site image of house">
+            <div id="image-text">
+                <h1>Find Your Perfect Rental Home</h1>
+            </div>
+            <input type="text" id="search-box" placeholder="Search...">
+           
+        </div>
+        */
