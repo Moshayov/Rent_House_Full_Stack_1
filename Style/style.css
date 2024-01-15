@@ -139,7 +139,7 @@ home
 }
 
 #image-text h1 {
-    display: block;
+    display:flex;
     position: absolute;
     top:190px;
     left: 50%;
@@ -149,9 +149,10 @@ home
     color: #fff;
 }
 #image-text h3 {
-  display: block;
+  display:block;
+  margin-top: 10px;
   position: absolute;
-  top:300px;
+  top:320px;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -194,7 +195,7 @@ home
 
 .box-ta{
   margin: auto;
-  margin-top: -300px;
+  margin-top: -250px;
   position: relative;
   width: 500px;
   height: 42px;
