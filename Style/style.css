@@ -70,6 +70,7 @@ Navbar
 }
 @media screen and (max-width: 750px) {
   .menu{
+    display: none;
   }
   .nav-links{
     position: fixed;
@@ -99,8 +100,8 @@ Navbar
     font-size: 44px;
     font-weight: bolder;
   }
-  .navbar input[type="checkbox"]:checked + .nav-links  {
-    width: 259px;
+  .navbar input[type="checkbox"]:checked + .manu  {
+    display: block;
   }
   .navbar input[type="checkbox"]:checked + .open-menu::before{
   content: '✕';
