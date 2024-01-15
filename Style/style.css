@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Sora";
 }/*
 input[type="checkbox"]{
   display: none;
@@ -135,9 +135,11 @@ home
     width: 100%;
     height: 100vh;
     object-fit: cover;
+    /*filter: brightness(0.6); */
 }
 
 #image-text h1 {
+    display: block;
     position: absolute;
     top:190px;
     left: 50%;
@@ -146,26 +148,53 @@ home
     font-weight:bolder;
     color: #fff;
 }
+#image-text h3 {
+  display: block;
+  position: absolute;
+  top:300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight:bolder;
+  color: #fff;
+}
 
 #search-box {
   border: none;
   height: 100%;
   width: 100%;
   padding: 0px 5px;
-  background-color:#fdf5f500;
+  background-color:#f9f5f500;
   border-radius: 50px;
   font-size: 18px;
   color: #ddd;
 
 }
-    .icon-search{
-   
-    font-size: 1.2em;
+#search-box:focus{/*v*/
+  outline: none;
+}
+.icon-search{
+      align-items: center;
+      justify-content: center;
+      margin-left: 40px;
+      color: rgb(16, 14, 14);
+       font-size: 1.0em;
    
 }
+
+.serch-d{/*v*/
+  cursor: pointer;
+  border-color: #1212c5;
+  float: right;
+  border-radius: 5px;
+  height: 100%;
+  width: 100px;
+  background-color: #f1e9e9;
+}
+
 .box-ta{
   margin: auto;
-  margin-top: -400px;
+  margin-top: -300px;
   position: relative;
   width: 500px;
   height: 42px;
@@ -228,6 +257,7 @@ propeties
 }
 .home_p{
     /*background-color:rgb(212, 212, 220);*/
+    
     width: 300px;
     height: 500px;
     border-top: 2px solid rgb(71, 68, 68); /* Only top border */
@@ -379,7 +409,7 @@ contact Us
 
   width: 100%;
   height: 100%;
-  opacity: 0.6; /* Adjust the opacity to control the intensity of the cloud effect */
+  
 }
 
 
@@ -397,7 +427,6 @@ contact Us
     font-size: 1.5em; /* Adjust font size */
     color: #0a0808; /* Orange color */   
 }
-
 .contactQustion{
   position: relative;
   width: 100%;
@@ -409,9 +438,6 @@ contact Us
     font-size: 1.5em; /* Adjust font size */
     color: #0a0808; /* Orange color */
 }
-
-
-
 .Contact_Us_q li{
     list-style: none;
     width: 90%;
