@@ -234,10 +234,15 @@ propeties
 ===============
 */
 
+.property-page{
+  position: relative;
+  width: 100%;
+  padding: 100px 40px; 
+}
+
 .content_property{
     display:flex;
-    justify-content:space-evenly; 
-    top: 400px; 
+    justify-content:space-evenly;   
     gap:1rem;
     flex-wrap: wrap;
     flex: 11 calc(33.333%-1rem);
@@ -262,12 +267,10 @@ propeties
     height:250px;
     margin: 25px 1px 25px 1px;
     border-radius: 14px; /* Rounded corners */
-    transition: filter 0.2s ease; /* Smooth transition */
+    transition: .2s linear;
   }
   .home_picture:hover {
-    filter: blur(5px); /* Blur effect on hover */
-    height:280px;
-    width: 320px;
+    transform: scale(1.1);
   }
 
   .properties_h2 {
