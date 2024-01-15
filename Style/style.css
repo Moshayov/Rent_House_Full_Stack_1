@@ -57,35 +57,13 @@ Navbar
 }
 
  .open-menu {
-  display: none; /* Initially hide the checkbox */
+  /*display: none; /* Initially hide the checkbox */
   cursor: pointer;
+  float: right;
 }
 
-@media screen and (max-width:680px) {
-  .menu{
-width: 100%;
-max-height: 0;
-overflow: hidden;
-
-    transition: all 0.2s ease-in-out;
-    
-  }
-  .open-menu{
-    display:inline-flex;
-    float: right;
-    margin-top: -50px;
-    margin-right: 10px;
-  }
-   
-   #check:checked ~ .menu
-   {
-    max-height: 100%;
-   }
-.nav-links{
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
+@media screen and (max-width:650px) {
+  
 
  /*
 =============== 
@@ -408,7 +386,7 @@ contact Us
 
 #contact_h1{
    margin-top:50px ;
-    color: rgb(12, 12, 9); /* Adjust text color to be visible on the image */
+   color: #404042 ; /* Adjust text color to be visible on the image */
     text-align: center;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -651,9 +629,7 @@ responsive Design
 ===============
 */
 @media (max-width: 991px){
-  body{
-    background: #fff;
-  }
+  
 /*contact us*/
   .contact_1{
     padding: 20px;
