@@ -73,7 +73,7 @@ Navbar
   
     padding: 0.15rem 1rem;
   }
-  
+  /*
   @media screen and (min-width: 992px) {
     .navbar {
       height: 6rem;
@@ -108,4 +108,4 @@ Navbar
       margin-left:  auto;
     }
   }
-
+*/

@@ -209,11 +209,7 @@ home
   height: 100%;
   vertical-align: middle;
 }
-@media screen and (max-width:680px) {
 
-
-  
-}
 
 
 /*
@@ -333,29 +329,23 @@ private house
   margin-top: 0.5rem;
   letter-spacing: var(--letterSpacing);
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 375px) {
   .House-list {
-    grid-template-columns: 1fr 1fr;
-  }
-  .house-img {
-    height: 10rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .House-container {
-    grid-template-columns: 200px 1fr;
-    gap: 1rem;
-  }
-  .House-list {
+    grid-template-columns: 1fr;
     
-    grid-template-columns: 1fr 1fr;
   }
-
-  .House p {
-    font-size: 0.85rem;
+  .House h5 {
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
   }
-
+  .House p{
+    font-size: 0.70rem;
+    margin-left: 0.5rem;
+  }
+  .house-img{
+    width: 17rem;
+    margin-left: 0.5rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {

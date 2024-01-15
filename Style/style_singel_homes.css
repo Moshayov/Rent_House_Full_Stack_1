@@ -16,7 +16,7 @@ body .Single_Home {
 }
 
 .view-property .details .thumb .big-image {
-  margin-right: 1rem; /* Add margin to create space between big and small images */
+  margin-right: 0.5rem; /* Add margin to create space between big and small images */
 }
 
 .view-property .details .thumb{
@@ -29,9 +29,10 @@ body .Single_Home {
   
 }
 .view-property .details .thumb .big-image img{
-  height: 35rem;
-  width: 100%;
-  object-fit: contain;
+  height: 550px;
+  width: 1000px;
+  
+  object-fit:fill;
 }
 .view-property .details .thumb .small-images{
   display: flex;
@@ -42,7 +43,7 @@ body .Single_Home {
 }
 
 .view-property .details .thumb .small-images img{
-  height: 8rem;
+  height:8rem/*15%*/;
   width: 20rem;
   object-fit: cover;
   cursor: pointer;
@@ -212,29 +213,6 @@ body .Single_Home {
 }
 
 
-@media (max-width: 700px) {
-  /* Make table rows behave like a flex container */
-  .info {
-    display: flex;
-    flex-direction: column;
-  }
-  tr {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* Reset the display property for table cells to stack them vertically */
-  td {
-    display: block;
-    text-align: left;
-  }
-}
-
-@media (max-width: 922px) {
-
-  
-}
-
  /*
 =============== 
 Navbar
@@ -295,7 +273,7 @@ input[type="checkbox"]{
 
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 375px) {
   .menu{
     display: none;
   }
@@ -337,5 +315,30 @@ input[type="checkbox"]{
   font-weight: bolder;
 
   }
+  .small-images, .big-image {
+    margin-top: 2rem;
+    width: 5rem;
+    height: 8rem;
+    display: flex;
+  }
+  .big-image{
+    height: 30%;
+    width:30%;
+  }
+    /* Make table rows behave like a flex container */
+    .info {
+      display: flex;
+      flex-direction: column;
+    }
+    tr {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /* Reset the display property for table cells to stack them vertically */
+    td {
+      display: block;
+      text-align: left;
+    }
 }
 
