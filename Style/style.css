@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-}
+}/*
 input[type="checkbox"]{
   display: none;
 } 
@@ -27,6 +27,7 @@ Navbar
   z-index: 1000; /* Adjust z-index as needed */
 }
 
+
 .nav-links {
   list-style-type: none;
   margin:0; 
@@ -34,6 +35,10 @@ Navbar
   display: flex;
   justify-content:center;
   align-items: center;
+}
+.nav-link:first-child {
+  border-color: #0c0c0d;
+  box-sizing: 2px;
 }
 
 .nav-link {
@@ -57,20 +62,67 @@ Navbar
 }
 
  .open-menu {
-  /*display: none; /* Initially hide the checkbox */
+  display: none; /* Initially hide the checkbox */
   cursor: pointer;
   float: right;
+  margin: 10px;
+  z-index: 100;
+}
+@media screen and (max-width: 750px) {
+  .menu{
+  }
+  .nav-links{
+    position: fixed;
+    top: 60px;
+    right: 0;
+    height: 100vh;
+    width: 259px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.931);
+    backdrop-filter: blur(10%);
+    box-shadow: -10px 0 10px rgba(0, 0,0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+  }
+  .nav-links li{
+    width: 100%;
+  }
+
+  .open-menu{
+    display:block;
+  }
+
+  .open-menu::before{
+    content: '≡';
+    margin-right: 10px;
+    font-size: 44px;
+    font-weight: bolder;
+  }
+  .navbar input[type="checkbox"]:checked + .nav-links  {
+    width: 259px;
+  }
+  .navbar input[type="checkbox"]:checked + .open-menu::before{
+  content: '✕';
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: bolder;
+
+  }
+
 }
 
-@media screen and (max-width:650px) {
-  
 
+/* Show the menu when checkbox is checked */
+/*<i class="fa fa-bars" style="font-size:36px"></i>
+
+*/
  /*
 =============== 
 home
 ===============
 */
-}
+
 
 #content {
     width: 100%;
