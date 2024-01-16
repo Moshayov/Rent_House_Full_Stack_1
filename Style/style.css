@@ -341,6 +341,18 @@ h5 {
 Propeties diffrent
 ===============
 */
+.page_p{
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  padding: 30px 40px; 
+}
+.ptoperties_h11{
+  margin-top: 100px;
+  color: #404042 ;
+  text-align: center; /* Center align all text */ 
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  
+}
 .page .House-container .House-list img:hover{
   transform: scale(1.1);
 }
