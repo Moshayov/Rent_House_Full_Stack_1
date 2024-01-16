@@ -771,17 +771,16 @@ About Us
   height: 200px !important;
 }
 
-
 .img-text-about_us h1{
-font-size: 20px;
+font-size: 20px !important;
 }
 .page .about-us img{
    
     height:200px !important;
   }
   .page .about-us .img-text-about_us h1{
-    font-size:40px !important;
-    margin: 93px 30px;
+    font-size:35px !important;
+    margin: 93px 10px;
 
   }
 

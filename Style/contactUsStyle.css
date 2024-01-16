@@ -68,7 +68,7 @@ Navbar
   margin: 10px;
   z-index: 100;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 376px) {
   .menu{
     display: none;
   }
@@ -100,15 +100,15 @@ Navbar
     font-size: 44px;
     font-weight: bolder;
   }
-  .navbar input[type="checkbox"]:checked + .manu  {
-    display: block;
+  .navbar input[type="checkbox"]:checked + .menu {
+    display: block !important;
   }
   .navbar input[type="checkbox"]:checked + .open-menu::before{
-  content: '✕';
-  margin-right: 10px;
-  font-size: 24px;
-  font-weight: bolder;
-
+    content: '✕';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: bolder;
+  
   }
 
 }
@@ -264,22 +264,6 @@ propeties
 private house
 ===============
 */
-
-/*change*/
-.page_p{
-  position: relative;
-  width: 100%;
-  margin-top: 20px;
-  padding: 30px 40px; 
-}
-.ptoperties_h11{
-  margin-top: 100px;
-  color: #404042 ;
-  text-align: center; /* Center align all text */ 
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  
-}
-
-
 .House-container {
   display: grid;
   gap: 2rem 1rem;
@@ -315,7 +299,7 @@ private house
   color: var(--grey-500);
   margin-top: 0.5rem;
   letter-spacing: var(--letterSpacing);
-}/*
+}
 @media screen and (min-width: 375px) {
   .House-list {
     grid-template-columns: 1fr;
@@ -357,6 +341,18 @@ h5 {
 Propeties diffrent
 ===============
 */
+.page_p{
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  padding: 30px 40px; 
+}
+.ptoperties_h11{
+  margin-top: 100px;
+  color: #404042 ;
+  text-align: center; /* Center align all text */ 
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  
+}
 .page .House-container .House-list img:hover{
   transform: scale(1.1);
 }
@@ -790,6 +786,7 @@ font-size: 20px;
   }
 
 }
+
 
 
 
