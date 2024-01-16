@@ -7,10 +7,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Sora";
-}/*
-input[type="checkbox"]{
-  display: none;
-} 
+}
  /*
 =============== 
 Navbar
@@ -112,10 +109,6 @@ Navbar
   }
 
 }
-
-
-/* Show the menu when checkbox is checked */
-/*<i class="fa fa-bars" style="font-size:36px"></i>
 
 */
  /*
@@ -224,7 +217,6 @@ propeties
 
 }
 .home_p{
-    /*background-color:rgb(212, 212, 220);*/
     
     width: 300px;
     height: 500px;
@@ -250,13 +242,13 @@ propeties
 
   .properties_h2 {
     margin: -10px 0px 0px 55px;
-    font-size: 1.2em; /* Adjust the font size */
+    font-size: 1.2em; 
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  
   }
 
   .properties_p {
     margin: 5px 10px;
-    font-size: 0.9em; /* Adjust the font size */
+    font-size: 0.9em; 
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  
   }
 /*
@@ -395,10 +387,9 @@ contact Us
     font-size: 2.5em; /* Adjust font size */
    
   }
-#contact_h2{
-   
-    font-size: 1.5em; /* Adjust font size */
-    color: #0a0808; /* Orange color */   
+#contact_h2, .contact_p{ 
+    font-size: 1.5em; 
+    color: #0a0808; 
 }
 .contactQustion{
   position: relative;
@@ -408,8 +399,6 @@ contact Us
 
 .contact_p{
     display: flex; 
-    font-size: 1.5em; /* Adjust font size */
-    color: #0a0808; /* Orange color */
 }
 .Contact_Us_q li{
     list-style: none;
@@ -461,9 +450,9 @@ content: '-';
 }
 #contact_h3{
    
-  text-align: center; /* Center align all text */
-  font-size: 2.5em; /* Adjust font size */
-  color: #0a0808; /* Orange color */
+  text-align: center; 
+  font-size: 2.5em; 
+  color: #0a0808; 
 } 
 /*form*/
 .form{
@@ -575,7 +564,7 @@ width: 100%;
   min-width: 40px;
   height: 40px;
   color: #f4f4f9;
-  background-color: #493910;; /* Green color */
+  background-color: #493910;; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -655,7 +644,6 @@ responsive Design
     padding: 0;
   }
 
-  /*navigation*/
   
 }
 
