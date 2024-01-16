@@ -64,7 +64,7 @@ Navbar
   margin: 10px;
   z-index: 100;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
   .menu{
     display: none;
   }
@@ -616,7 +616,7 @@ responsive Design
   
 /*contact us*/
   .contact_1{
-    padding: 20px;
+    padding: 10px;
   }
   .box{
     grid-template-columns: 1fr;
