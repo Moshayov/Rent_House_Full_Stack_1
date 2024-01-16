@@ -6,7 +6,28 @@
     <title>About Us</title>
     <link rel="stylesheet" href="/Style/style_diffrent_screen.css">
     <link rel="stylesheet" href="/Style/style.css">
-   
+    <style>
+        /* Add your video section styles here */
+        .video-section {
+            background:rgba(224, 213, 213, 0.37);
+            text-align: center;
+            padding: 50px;
+            margin-top: 30px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">  
@@ -74,6 +95,17 @@
               </p>
             </article>
         </section>
+        <section class="video-section">
+            <h2>Watch Our Story</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="/for you_.mp4" type="video/mp4" >
+                    Your browser does not support the video tag.
+                    
+                </video>
+            </div>
+        </section>
+
     </main>
 </body>
 </html>
