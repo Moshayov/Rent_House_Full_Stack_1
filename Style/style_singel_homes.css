@@ -31,7 +31,6 @@ body .Single_Home {
 .view-property .details .thumb .big-image img{
   height: 550px;
   width: 1000px;
-  
   object-fit:fill;
 }
 .view-property .details .thumb .small-images{
@@ -43,7 +42,7 @@ body .Single_Home {
 }
 
 .view-property .details .thumb .small-images img{
-  height:8rem/*15%*/;
+  height:8rem;
   width: 20rem;
   object-fit: cover;
   cursor: pointer;
@@ -270,9 +269,6 @@ Navbar
 input[type="checkbox"]{
   display: none;
 } 
-
-
-
 @media screen and (max-width: 376px) {
   .menu{
     display: none;
@@ -315,16 +311,37 @@ input[type="checkbox"]{
   font-weight: bolder;
 
   }
-  .small-images, .big-image {
-    margin-top: 2rem;
-    width: 5rem;
-    height: 8rem;
+  .view-property .details .thumb {
+    flex-direction: column; /* Set flex direction to column for small screens */
+    align-items: center; /* Center items on small screens */
+  }
+
+  .view-property .details .thumb .big-image {
+    margin-right: 0; /* Remove margin for the big image on small screens */
+    margin-bottom: 1rem; /* Add margin below the big image on small screens */
+  }
+  .view-property .details .thumb .big-image img {
+    /*width: 100%; /* Set the width to 100% to maintain aspect ratio */
+    max-height: 250px; /* Set a fixed max-height for the big image */
+    /*object-fit: contain; /* Maintain aspect ratio and fit within the container */
+  }
+
+
+  .view-property .details .thumb .small-images {
     display: flex;
+    flex-direction: row; /* Set flex direction to row for small screens */
+    justify-content: center; /* Center items horizontally on small screens */
+    flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+    overflow: auto; /* Add horizontal scrolling if needed */
   }
-  .big-image{
-    height: 30%;
-    width:30%;
+
+  .view-property .details .small-images img {
+    width: 93px !important; /* Set a percentage width for each small image */
+    height: 70px !important; /* Maintain aspect ratio */
+   
   }
+  
+  
     /* Make table rows behave like a flex container */
     .info {
       display: flex;
