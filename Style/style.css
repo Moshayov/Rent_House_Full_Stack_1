@@ -281,9 +281,12 @@ private house
   text-decoration: none;
 
 }
+.house-img:hover{
+  transform: scale(1.1);
+}
 .house-img {
   height: 15rem;
-  border-radius: var(--borderRadius);
+  border-radius: 5px/*var(--borderRadius)*/;
   margin-bottom: 1rem;
   width: 300px;
 }
