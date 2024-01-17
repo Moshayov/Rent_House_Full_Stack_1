@@ -70,7 +70,7 @@ Navbar
 }
 @media screen and (max-width: 376px) {
   .menu{
-    display: none;
+    display:none;
   }
   .nav-links{
     position: fixed;
@@ -691,7 +691,6 @@ About Us
 
 /*about-page*/
 .about-page {
-  background: #eae5e5 !important;
   margin-top: 10rem;
  margin-left: 20px;
   margin-right: 20px;
@@ -737,8 +736,7 @@ About Us
 
 /* history */
 .history {
-  background: #c1bfbf !important;
- margin-top: 30px;
+ margin-top: 10rem;
  margin-left: 20px;
  margin-right: 20px;
   display:flex;
@@ -773,20 +771,18 @@ About Us
   height: 200px !important;
 }
 
+
 .img-text-about_us h1{
-font-size: 20px !important;
+font-size: 20px;
 }
 .page .about-us img{
    
     height:200px !important;
   }
   .page .about-us .img-text-about_us h1{
-    font-size:35px !important;
-    margin: 93px 10px;
+    font-size:40px !important;
+    margin: 93px 30px;
 
-  }
-  .about-page {
-    margin-top: 60px;
   }
 
 }
